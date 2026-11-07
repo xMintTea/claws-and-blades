@@ -16,7 +16,7 @@ public class ClawsAndBlades {
     public static final String MODID = "clawsandblades";
     public static final Logger LOG = LogManager.getLogger(MODID);
 
-    @SidedProxy(clientSide = "net.xminttea.fab.ClientProxy", serverSide = "net.xminttea.fab.CommonProxy")
+    @SidedProxy(clientSide = "net.xminttea.cab.ClientProxy", serverSide = "net.xminttea.cab.CommonProxy")
     public static CommonProxy proxy;
 
     @Mod.EventHandler
