@@ -12,8 +12,7 @@ public class CommonProxy {
     public void preInit(FMLPreInitializationEvent event) {
         Config.synchronizeConfiguration(event.getSuggestedConfigurationFile());
 
-        ClawsAndBlades.LOG.info(Config.greeting);
-        ClawsAndBlades.LOG.info("I am MyMod at version " + Tags.VERSION);
+        ClawsAndBlades.LOG.info(Config.werewolfDamageMultiplier);
     }
 
     // load "Do your mod setup. Build whatever data structures you care about. Register recipes." (Remove if not needed)

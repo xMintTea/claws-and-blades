@@ -6,12 +6,12 @@ import net.minecraftforge.common.config.Configuration;
 
 public class Config {
 
-    public static String greeting = "Hello World";
+    public static float werewolfDamageMultiplier = 1.0f;
 
     public static void synchronizeConfiguration(File configFile) {
         Configuration configuration = new Configuration(configFile);
 
-        greeting = configuration.getString("greeting", Configuration.CATEGORY_GENERAL, greeting, "How shall I greet?");
+        werewolfDamageMultiplier = configuration.getFloat("werewolfDamageMultiplier", Configuration.CATEGORY_GENERAL, werewolfDamageMultiplier, 0.0f, Float.MAX_VALUE, "");
 
         if (configuration.hasChanged()) {
             configuration.save();
