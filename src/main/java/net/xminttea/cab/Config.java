@@ -11,7 +11,13 @@ public class Config {
     public static void synchronizeConfiguration(File configFile) {
         Configuration configuration = new Configuration(configFile);
 
-        werewolfDamageMultiplier = configuration.getFloat("werewolfDamageMultiplier", Configuration.CATEGORY_GENERAL, werewolfDamageMultiplier, 0.0f, Float.MAX_VALUE, "");
+        werewolfDamageMultiplier = configuration.getFloat(
+            "werewolfDamageMultiplier",
+            Configuration.CATEGORY_GENERAL,
+            werewolfDamageMultiplier,
+            0.0f,
+            Float.MAX_VALUE,
+            "");
 
         if (configuration.hasChanged()) {
             configuration.save();

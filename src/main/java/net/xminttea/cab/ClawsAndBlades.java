@@ -10,7 +10,11 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.event.FMLServerStartingEvent;
 
-@Mod(modid = ClawsAndBlades.MODID, version = Tags.VERSION, name = "ClawssAndBlades", acceptedMinecraftVersions = "[1.7.10]")
+@Mod(
+    modid = ClawsAndBlades.MODID,
+    version = Tags.VERSION,
+    name = "ClawssAndBlades",
+    acceptedMinecraftVersions = "[1.7.10]")
 public class ClawsAndBlades {
 
     public static final String MODID = "clawsandblades";
