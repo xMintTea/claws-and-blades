@@ -1,13 +1,15 @@
 package net.xminttea.cab.mixins;
 
-import com.gtnewhorizon.gtnhmixins.ILateMixinLoader;
-import com.gtnewhorizon.gtnhmixins.builders.IMixins;
-
-import javax.annotation.Nonnull;
 import java.util.List;
 import java.util.Set;
 
+import javax.annotation.Nonnull;
+
+import com.gtnewhorizon.gtnhmixins.ILateMixinLoader;
+import com.gtnewhorizon.gtnhmixins.builders.IMixins;
+
 public class LateMixinsLoader implements ILateMixinLoader {
+
     @Override
     public String getMixinConfig() {
         return "mixins.clawsandblades.late.json";

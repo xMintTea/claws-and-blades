@@ -1,14 +1,16 @@
 package net.xminttea.cab.mixins;
 
-import com.gtnewhorizon.gtnhmixins.IEarlyMixinLoader;
-import com.gtnewhorizon.gtnhmixins.builders.IMixins;
-import cpw.mods.fml.relauncher.IFMLLoadingPlugin;
-
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import com.gtnewhorizon.gtnhmixins.IEarlyMixinLoader;
+import com.gtnewhorizon.gtnhmixins.builders.IMixins;
+
+import cpw.mods.fml.relauncher.IFMLLoadingPlugin;
+
 public class EarlyMixinsLoader implements IFMLLoadingPlugin, IEarlyMixinLoader {
+
     @Override
     public String getMixinConfig() {
         return "mixins.clawsandblades.early.json";
