@@ -6,8 +6,10 @@ import java.util.Set;
 import javax.annotation.Nonnull;
 
 import com.gtnewhorizon.gtnhmixins.ILateMixinLoader;
+import com.gtnewhorizon.gtnhmixins.LateMixin;
 import com.gtnewhorizon.gtnhmixins.builders.IMixins;
 
+@LateMixin
 public class LateMixinsLoader implements ILateMixinLoader {
 
     @Override

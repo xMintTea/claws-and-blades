@@ -7,11 +7,7 @@ import com.gtnewhorizon.gtnhmixins.builders.MixinBuilder;
 
 public enum Mixins implements IMixins {
 
-    // Read the java doc of IMixins and MixinBuilder for further information
-
-    // You should declare all of your mixins early and late in this same enum
-
-    EXAMPLE(new MixinBuilder().setPhase(Phase.EARLY)
+    EXAMPLE(new MixinBuilder().setPhase(Phase.LATE)
         .addClientMixins("MixinWitcheryShapeshift"));
 
     private final MixinBuilder builder;

@@ -9,6 +9,7 @@ import com.gtnewhorizon.gtnhmixins.builders.IMixins;
 
 import cpw.mods.fml.relauncher.IFMLLoadingPlugin;
 
+@IFMLLoadingPlugin.MCVersion("1.7.10")
 public class EarlyMixinsLoader implements IFMLLoadingPlugin, IEarlyMixinLoader {
 
     @Override
@@ -23,17 +24,17 @@ public class EarlyMixinsLoader implements IFMLLoadingPlugin, IEarlyMixinLoader {
 
     @Override
     public String[] getASMTransformerClass() {
-        return null;
+        return new String[0];
     }
 
     @Override
     public String getModContainerClass() {
-        return "";
+        return null;
     }
 
     @Override
     public String getSetupClass() {
-        return "";
+        return null;
     }
 
     @Override
@@ -43,6 +44,6 @@ public class EarlyMixinsLoader implements IFMLLoadingPlugin, IEarlyMixinLoader {
 
     @Override
     public String getAccessTransformerClass() {
-        return "";
+        return null;
     }
 }
