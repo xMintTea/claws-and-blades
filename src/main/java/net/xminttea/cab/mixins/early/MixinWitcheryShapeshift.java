@@ -1,4 +1,4 @@
-package net.xminttea.cab.mixins;
+package net.xminttea.cab.mixins.early;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;

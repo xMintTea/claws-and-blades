@@ -1,11 +1,8 @@
+
 {
   "required": true,
-  "minVersion": "0.8.3-GTNH",
-  "package": "net.xminttea.cab.mixins",
-  "refmap": "mixins.cab.refmap.json",
+  "minVersion": "0.8.5-GTNH",
+  "refmap": "mixins.clawsandblades.refmap.json",
   "target": "@env(DEFAULT)",
-  "compatibilityLevel": "JAVA_8",
-  "mixins": [
-      "MixinWitcheryShapeshift"
-  ]
+  "compatibilityLevel": "JAVA_8"
 }
